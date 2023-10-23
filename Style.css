@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Crimson Pro","serif";
+}
+body{
+    display: flex;
+    background: #c7ead9;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.wrapper{
+    width: 430px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 8px 8px 24px rgba(4, 63, 49, 0.4);
+    padding: 20px;
+}
+.wrapper h1{
+    font-weight: 500;
+    font-size: 25px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.wrapper .content{
+    margin: 25px 25px 35px;
+}
+.content .typing-input{
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
+}
+.content .inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.inputs input{
+    height: 30px;
+    width: 31px;
+    margin: 2.5px;
+    margin-bottom: 6px;
+    color: #3a816a;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #b5b5b5;
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+}
+input:focus{
+    border: 1.1px solid #b5b5b5;
+}
+.inputs input:first-child{
+    margin-left: 0;
+}
+.content .details{
+    margin: 18px 0 22px;
+}
+.details p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #747474;
+}
+.details p b{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #282727;
+}
+.refresh-btn{
+    display: block;
+    width: 100%;
+    outline: none;
+    align-self: center;
+    font-size: 18px;
+    padding: 15px 0;
+    margin-bottom: -18px;
+    text-align: center;
+    background: #3a816a;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+.refresh-btn:active{
+    transform: scale(.95);
+}
+button:hover{
+    background: #25775d;
+}
+
+@media (max-width:400px){
+    .wrapper{
+        width: 85%;
+        padding: 15px;
+        margin-top: -90px;
+    }
+    .wrapper h1{
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+    .wrapper .content{
+        margin: 22px 22px 30px;
+    }
+    .inputs input{
+        height: 28px;
+        width: 29px;
+        margin: 2px;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    .details p{
+        font-size: 15px;
+    }
+    .details p b{
+        font-size: 15px;
+    }
+    .refresh-btn{
+        padding: 14px 0;
+    }
+}
